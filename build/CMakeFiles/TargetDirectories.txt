@@ -1,0 +1,3 @@
+/home/ubuntulaptop/projects/pomodoro/build/CMakeFiles/pomodoro.dir
+/home/ubuntulaptop/projects/pomodoro/build/CMakeFiles/edit_cache.dir
+/home/ubuntulaptop/projects/pomodoro/build/CMakeFiles/rebuild_cache.dir
