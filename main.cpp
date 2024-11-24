@@ -28,7 +28,7 @@ public:
 int main()
 {
     std::cout << "Pomodoro Timer started " << std::endl;
-    Timer pomodoro(1);
+    Timer pomodoro(25);
     pomodoro.start();
 
     return 0;
