@@ -21,7 +21,7 @@ public:
 
         std::cout << "\nTime is up! Good job!\n" << std::endl;
         
-        system("paplay ~/data/bird.mp3");  // Replace /path/to/your/alarm.wav
+        system("paplay ~/data/piano.mp3");  // Replace /path/to/your/alarm.wav
     }
 };
 
