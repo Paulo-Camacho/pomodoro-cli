@@ -26,28 +26,23 @@ public:
 class Prompt
 {
 public:
-    int question = 0;
+    char question{};
+    Prompt(char hold) : question(hold) {}
 
-    void proceede()
+    void start()  
     {
-        
-        std::cout << "The Pomodoro Timer has started, good luck and have fun!" << std::endl;
-        Timer pomodoro(25);
-        Timer ender(5);
-        pomodoro.start();        
-        std::cout << "5 minute break? Enter 1/YES 0/NO " << std::endl;
-        std::cin >> question;
-            if(question == 1)
-            {
-               ender.start();
-            }
-        std::cout << "Have a good day! " << std::endl;
+        std::cout << "Would you like to start? " << std::endl;
+        if(question == 'y')
+        {
+            std::cout << "Hello world! ";
+        }
     }
 };
 
+
 int main()
 {
-    Prompt reloj;
-    reloj.proceede();
+    Prompt pomodoro('y');
+    pomodoro.start();
     return 0;
 }
