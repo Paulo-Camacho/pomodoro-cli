@@ -1,6 +1,12 @@
 [
 {
   "directory": "/home/waifu/projects/pomodoro/build",
+  "command": "/usr/bin/clang++   -g -std=gnu++20 -Wall -Wextra -pedantic -o CMakeFiles/MyCppExecutable.dir/Timer.cpp.o -c /home/waifu/projects/pomodoro/Timer.cpp",
+  "file": "/home/waifu/projects/pomodoro/Timer.cpp",
+  "output": "CMakeFiles/MyCppExecutable.dir/Timer.cpp.o"
+},
+{
+  "directory": "/home/waifu/projects/pomodoro/build",
   "command": "/usr/bin/clang++   -g -std=gnu++20 -Wall -Wextra -pedantic -o CMakeFiles/MyCppExecutable.dir/main.cpp.o -c /home/waifu/projects/pomodoro/main.cpp",
   "file": "/home/waifu/projects/pomodoro/main.cpp",
   "output": "CMakeFiles/MyCppExecutable.dir/main.cpp.o"

@@ -81,12 +81,12 @@ clean: CMakeFiles/MyCppExecutable.dir/clean
 CMakeFiles/MyCppExecutable.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyCppExecutable.dir/build.make CMakeFiles/MyCppExecutable.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyCppExecutable.dir/build.make CMakeFiles/MyCppExecutable.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/waifu/projects/pomodoro/build/CMakeFiles --progress-num=1,2 "Built target MyCppExecutable"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/waifu/projects/pomodoro/build/CMakeFiles --progress-num=1,2,3 "Built target MyCppExecutable"
 .PHONY : CMakeFiles/MyCppExecutable.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/MyCppExecutable.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/waifu/projects/pomodoro/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/waifu/projects/pomodoro/build/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/MyCppExecutable.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/waifu/projects/pomodoro/build/CMakeFiles 0
 .PHONY : CMakeFiles/MyCppExecutable.dir/rule
@@ -107,6 +107,7 @@ CMakeFiles/MyCppExecutable.dir/clean:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
+	$(CMAKE_COMMAND) -P /home/waifu/projects/pomodoro/build/CMakeFiles/VerifyGlobs.cmake
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

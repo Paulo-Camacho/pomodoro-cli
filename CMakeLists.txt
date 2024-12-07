@@ -2,7 +2,7 @@
 cmake_minimum_required(VERSION 3.20)
 
 # Project name and version
-project(MyCppProject VERSION 1.0)
+project(pomodoro VERSION 1.0.1)
 
 # Specify the C++ standard
 set(CMAKE_CXX_STANDARD 20)
@@ -15,8 +15,17 @@ elseif (CMAKE_CXX_COMPILER_ID STREQUAL "MSVC")
     add_compile_options(/W4)
 endif()
 
+# Automatically find all source and header files, excluding the build directory
+file(GLOB_RECURSE SOURCES CONFIGURE_DEPENDS
+    "${CMAKE_SOURCE_DIR}/*.cpp"
+    "${CMAKE_SOURCE_DIR}/*.h"
+)
+
+# Exclude files inside the build directory
+list(FILTER SOURCES EXCLUDE REGEX "${CMAKE_BINARY_DIR}/.*")
+
 # Add the executable
-add_executable(MyCppExecutable main.cpp)
+add_executable(MyCppExecutable ${SOURCES})
 
 # Set output directory for the executable
 set_target_properties(MyCppExecutable PROPERTIES

@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/waifu/projects/pomodoro/Timer.cpp" "CMakeFiles/MyCppExecutable.dir/Timer.cpp.o" "gcc" "CMakeFiles/MyCppExecutable.dir/Timer.cpp.o.d"
   "/home/waifu/projects/pomodoro/main.cpp" "CMakeFiles/MyCppExecutable.dir/main.cpp.o" "gcc" "CMakeFiles/MyCppExecutable.dir/main.cpp.o.d"
   )
 

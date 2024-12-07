@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/MyCppExecutable.dir/Timer.cpp.o"
+  "CMakeFiles/MyCppExecutable.dir/Timer.cpp.o.d"
   "CMakeFiles/MyCppExecutable.dir/main.cpp.o"
   "CMakeFiles/MyCppExecutable.dir/main.cpp.o.d"
   "bin/MyCppExecutable"

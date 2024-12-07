@@ -149,10 +149,10 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=MyCppProject
+CMAKE_PROJECT_NAME:STATIC=pomodoro
 
 //Value Computed by CMake
-CMAKE_PROJECT_VERSION:STATIC=1.0
+CMAKE_PROJECT_VERSION:STATIC=1.0.1
 
 //Value Computed by CMake
 CMAKE_PROJECT_VERSION_MAJOR:STATIC=1
@@ -161,7 +161,7 @@ CMAKE_PROJECT_VERSION_MAJOR:STATIC=1
 CMAKE_PROJECT_VERSION_MINOR:STATIC=0
 
 //Value Computed by CMake
-CMAKE_PROJECT_VERSION_PATCH:STATIC=
+CMAKE_PROJECT_VERSION_PATCH:STATIC=1
 
 //Value Computed by CMake
 CMAKE_PROJECT_VERSION_TWEAK:STATIC=
@@ -239,6 +239,15 @@ MyCppProject_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
 MyCppProject_SOURCE_DIR:STATIC=/home/waifu/projects/pomodoro
+
+//Value Computed by CMake
+pomodoro_BINARY_DIR:STATIC=/home/waifu/projects/pomodoro/build
+
+//Value Computed by CMake
+pomodoro_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+pomodoro_SOURCE_DIR:STATIC=/home/waifu/projects/pomodoro
 
 
 ########################

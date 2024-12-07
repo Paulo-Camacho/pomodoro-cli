@@ -1,5 +1,5 @@
-CMakeFiles/MyCppExecutable.dir/main.cpp.o: \
-  /home/waifu/projects/pomodoro/main.cpp \
+CMakeFiles/MyCppExecutable.dir/Timer.cpp.o: \
+  /home/waifu/projects/pomodoro/Timer.cpp \
   /home/waifu/projects/pomodoro/Timer.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/iostream \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/requires_hosted.h \
