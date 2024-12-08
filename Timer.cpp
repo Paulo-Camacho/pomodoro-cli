@@ -14,5 +14,5 @@
 
         std::cout << "\033[2K\r"; // This clears the line 
         std::cout << "End of timer " << std::endl; 
-        system("paplay ~/data/piano.mp3");  
+        system("paplay sounds/piano.mp3");  
     }
