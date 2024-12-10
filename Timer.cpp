@@ -1,6 +1,6 @@
 #include "Timer.h"
 
-    Timer::Timer(double inputInMinutes) : totalSeconds(inputInMinutes * 60) {}  // Interesting constructor syntax
+    Timer::Timer(double m) : totalSeconds(m * 60) {}  // Interesting constructor syntax
 
     void Timer::start()
     {
@@ -14,5 +14,5 @@
 
         std::cout << "\033[2K\r"; // This clears the line 
         std::cout << "End of timer " << std::endl; 
-        system("paplay sounds/piano.mp3");  
+        system("paplay ~/piano.mp3");  
     }

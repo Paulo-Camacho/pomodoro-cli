@@ -69,10 +69,24 @@ include CMakeFiles/MyCppExecutable.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/MyCppExecutable.dir/flags.make
 
+CMakeFiles/MyCppExecutable.dir/Prompt.cpp.o: CMakeFiles/MyCppExecutable.dir/flags.make
+CMakeFiles/MyCppExecutable.dir/Prompt.cpp.o: /home/waifu/projects/pomodoro/Prompt.cpp
+CMakeFiles/MyCppExecutable.dir/Prompt.cpp.o: CMakeFiles/MyCppExecutable.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/waifu/projects/pomodoro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/MyCppExecutable.dir/Prompt.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyCppExecutable.dir/Prompt.cpp.o -MF CMakeFiles/MyCppExecutable.dir/Prompt.cpp.o.d -o CMakeFiles/MyCppExecutable.dir/Prompt.cpp.o -c /home/waifu/projects/pomodoro/Prompt.cpp
+
+CMakeFiles/MyCppExecutable.dir/Prompt.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MyCppExecutable.dir/Prompt.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/waifu/projects/pomodoro/Prompt.cpp > CMakeFiles/MyCppExecutable.dir/Prompt.cpp.i
+
+CMakeFiles/MyCppExecutable.dir/Prompt.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyCppExecutable.dir/Prompt.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/waifu/projects/pomodoro/Prompt.cpp -o CMakeFiles/MyCppExecutable.dir/Prompt.cpp.s
+
 CMakeFiles/MyCppExecutable.dir/Timer.cpp.o: CMakeFiles/MyCppExecutable.dir/flags.make
 CMakeFiles/MyCppExecutable.dir/Timer.cpp.o: /home/waifu/projects/pomodoro/Timer.cpp
 CMakeFiles/MyCppExecutable.dir/Timer.cpp.o: CMakeFiles/MyCppExecutable.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/waifu/projects/pomodoro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/MyCppExecutable.dir/Timer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/waifu/projects/pomodoro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/MyCppExecutable.dir/Timer.cpp.o"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyCppExecutable.dir/Timer.cpp.o -MF CMakeFiles/MyCppExecutable.dir/Timer.cpp.o.d -o CMakeFiles/MyCppExecutable.dir/Timer.cpp.o -c /home/waifu/projects/pomodoro/Timer.cpp
 
 CMakeFiles/MyCppExecutable.dir/Timer.cpp.i: cmake_force
@@ -86,7 +100,7 @@ CMakeFiles/MyCppExecutable.dir/Timer.cpp.s: cmake_force
 CMakeFiles/MyCppExecutable.dir/main.cpp.o: CMakeFiles/MyCppExecutable.dir/flags.make
 CMakeFiles/MyCppExecutable.dir/main.cpp.o: /home/waifu/projects/pomodoro/main.cpp
 CMakeFiles/MyCppExecutable.dir/main.cpp.o: CMakeFiles/MyCppExecutable.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/waifu/projects/pomodoro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/MyCppExecutable.dir/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/waifu/projects/pomodoro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/MyCppExecutable.dir/main.cpp.o"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyCppExecutable.dir/main.cpp.o -MF CMakeFiles/MyCppExecutable.dir/main.cpp.o.d -o CMakeFiles/MyCppExecutable.dir/main.cpp.o -c /home/waifu/projects/pomodoro/main.cpp
 
 CMakeFiles/MyCppExecutable.dir/main.cpp.i: cmake_force
@@ -99,17 +113,19 @@ CMakeFiles/MyCppExecutable.dir/main.cpp.s: cmake_force
 
 # Object files for target MyCppExecutable
 MyCppExecutable_OBJECTS = \
+"CMakeFiles/MyCppExecutable.dir/Prompt.cpp.o" \
 "CMakeFiles/MyCppExecutable.dir/Timer.cpp.o" \
 "CMakeFiles/MyCppExecutable.dir/main.cpp.o"
 
 # External object files for target MyCppExecutable
 MyCppExecutable_EXTERNAL_OBJECTS =
 
+bin/MyCppExecutable: CMakeFiles/MyCppExecutable.dir/Prompt.cpp.o
 bin/MyCppExecutable: CMakeFiles/MyCppExecutable.dir/Timer.cpp.o
 bin/MyCppExecutable: CMakeFiles/MyCppExecutable.dir/main.cpp.o
 bin/MyCppExecutable: CMakeFiles/MyCppExecutable.dir/build.make
 bin/MyCppExecutable: CMakeFiles/MyCppExecutable.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/waifu/projects/pomodoro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable bin/MyCppExecutable"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/waifu/projects/pomodoro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable bin/MyCppExecutable"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/MyCppExecutable.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

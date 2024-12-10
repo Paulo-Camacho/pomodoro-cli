@@ -130,6 +130,30 @@ MyCppExecutable/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyCppExecutable.dir/build.make CMakeFiles/MyCppExecutable.dir/build
 .PHONY : MyCppExecutable/fast
 
+Prompt.o: Prompt.cpp.o
+.PHONY : Prompt.o
+
+# target to build an object file
+Prompt.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyCppExecutable.dir/build.make CMakeFiles/MyCppExecutable.dir/Prompt.cpp.o
+.PHONY : Prompt.cpp.o
+
+Prompt.i: Prompt.cpp.i
+.PHONY : Prompt.i
+
+# target to preprocess a source file
+Prompt.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyCppExecutable.dir/build.make CMakeFiles/MyCppExecutable.dir/Prompt.cpp.i
+.PHONY : Prompt.cpp.i
+
+Prompt.s: Prompt.cpp.s
+.PHONY : Prompt.s
+
+# target to generate assembly for a file
+Prompt.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyCppExecutable.dir/build.make CMakeFiles/MyCppExecutable.dir/Prompt.cpp.s
+.PHONY : Prompt.cpp.s
+
 Timer.o: Timer.cpp.o
 .PHONY : Timer.o
 
@@ -187,6 +211,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... MyCppExecutable"
+	@echo "... Prompt.o"
+	@echo "... Prompt.i"
+	@echo "... Prompt.s"
 	@echo "... Timer.o"
 	@echo "... Timer.i"
 	@echo "... Timer.s"

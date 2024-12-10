@@ -5,6 +5,7 @@ cmake_policy(SET CMP0009 NEW)
 # SOURCES at CMakeLists.txt:19 (file)
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "/home/waifu/projects/pomodoro/*.cpp")
 set(OLD_GLOB
+  "/home/waifu/projects/pomodoro/Prompt.cpp"
   "/home/waifu/projects/pomodoro/Timer.cpp"
   "/home/waifu/projects/pomodoro/build/CMakeFiles/3.28.3/CompilerIdCXX/CMakeCXXCompilerId.cpp"
   "/home/waifu/projects/pomodoro/main.cpp"
@@ -17,6 +18,7 @@ endif()
 # SOURCES at CMakeLists.txt:19 (file)
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "/home/waifu/projects/pomodoro/*.h")
 set(OLD_GLOB
+  "/home/waifu/projects/pomodoro/Prompt.h"
   "/home/waifu/projects/pomodoro/Timer.h"
   "/home/waifu/projects/pomodoro/build/pomodoro.h"
   )

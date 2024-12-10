@@ -271,4 +271,5 @@ CMakeFiles/MyCppExecutable.dir/main.cpp.o: \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/atomic_timed_wait.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/this_thread_sleep.h \
   /usr/include/x86_64-linux-gnu/sys/time.h /usr/include/semaphore.h \
-  /usr/include/x86_64-linux-gnu/bits/semaphore.h
+  /usr/include/x86_64-linux-gnu/bits/semaphore.h \
+  /home/waifu/projects/pomodoro/Prompt.h
