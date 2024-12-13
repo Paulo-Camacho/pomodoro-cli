@@ -1,20 +1,14 @@
 [
 {
   "directory": "/home/waifu/projects/pomodoro/build",
-  "command": "/usr/bin/clang++   -g -std=gnu++20 -Wall -Wextra -pedantic -o CMakeFiles/MyCppExecutable.dir/Prompt.cpp.o -c /home/waifu/projects/pomodoro/Prompt.cpp",
-  "file": "/home/waifu/projects/pomodoro/Prompt.cpp",
-  "output": "CMakeFiles/MyCppExecutable.dir/Prompt.cpp.o"
+  "command": "/usr/bin/clang++  -I/home/waifu/projects/pomodoro/include -g -std=gnu++20 -o CMakeFiles/pomodoro.dir/src/Timer.cpp.o -c /home/waifu/projects/pomodoro/src/Timer.cpp",
+  "file": "/home/waifu/projects/pomodoro/src/Timer.cpp",
+  "output": "CMakeFiles/pomodoro.dir/src/Timer.cpp.o"
 },
 {
   "directory": "/home/waifu/projects/pomodoro/build",
-  "command": "/usr/bin/clang++   -g -std=gnu++20 -Wall -Wextra -pedantic -o CMakeFiles/MyCppExecutable.dir/Timer.cpp.o -c /home/waifu/projects/pomodoro/Timer.cpp",
-  "file": "/home/waifu/projects/pomodoro/Timer.cpp",
-  "output": "CMakeFiles/MyCppExecutable.dir/Timer.cpp.o"
-},
-{
-  "directory": "/home/waifu/projects/pomodoro/build",
-  "command": "/usr/bin/clang++   -g -std=gnu++20 -Wall -Wextra -pedantic -o CMakeFiles/MyCppExecutable.dir/main.cpp.o -c /home/waifu/projects/pomodoro/main.cpp",
-  "file": "/home/waifu/projects/pomodoro/main.cpp",
-  "output": "CMakeFiles/MyCppExecutable.dir/main.cpp.o"
+  "command": "/usr/bin/clang++  -I/home/waifu/projects/pomodoro/include -g -std=gnu++20 -o CMakeFiles/pomodoro.dir/src/main.cpp.o -c /home/waifu/projects/pomodoro/src/main.cpp",
+  "file": "/home/waifu/projects/pomodoro/src/main.cpp",
+  "output": "CMakeFiles/pomodoro.dir/src/main.cpp.o"
 }
 ]

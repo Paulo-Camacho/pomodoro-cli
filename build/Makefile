@@ -113,94 +113,69 @@ preinstall/fast:
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -P /home/waifu/projects/pomodoro/build/CMakeFiles/VerifyGlobs.cmake
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named MyCppExecutable
+# Target rules for targets named pomodoro
 
 # Build rule for target.
-MyCppExecutable: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MyCppExecutable
-.PHONY : MyCppExecutable
+pomodoro: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pomodoro
+.PHONY : pomodoro
 
 # fast build rule for target.
-MyCppExecutable/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyCppExecutable.dir/build.make CMakeFiles/MyCppExecutable.dir/build
-.PHONY : MyCppExecutable/fast
+pomodoro/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pomodoro.dir/build.make CMakeFiles/pomodoro.dir/build
+.PHONY : pomodoro/fast
 
-Prompt.o: Prompt.cpp.o
-.PHONY : Prompt.o
-
-# target to build an object file
-Prompt.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyCppExecutable.dir/build.make CMakeFiles/MyCppExecutable.dir/Prompt.cpp.o
-.PHONY : Prompt.cpp.o
-
-Prompt.i: Prompt.cpp.i
-.PHONY : Prompt.i
-
-# target to preprocess a source file
-Prompt.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyCppExecutable.dir/build.make CMakeFiles/MyCppExecutable.dir/Prompt.cpp.i
-.PHONY : Prompt.cpp.i
-
-Prompt.s: Prompt.cpp.s
-.PHONY : Prompt.s
-
-# target to generate assembly for a file
-Prompt.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyCppExecutable.dir/build.make CMakeFiles/MyCppExecutable.dir/Prompt.cpp.s
-.PHONY : Prompt.cpp.s
-
-Timer.o: Timer.cpp.o
-.PHONY : Timer.o
+src/Timer.o: src/Timer.cpp.o
+.PHONY : src/Timer.o
 
 # target to build an object file
-Timer.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyCppExecutable.dir/build.make CMakeFiles/MyCppExecutable.dir/Timer.cpp.o
-.PHONY : Timer.cpp.o
+src/Timer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pomodoro.dir/build.make CMakeFiles/pomodoro.dir/src/Timer.cpp.o
+.PHONY : src/Timer.cpp.o
 
-Timer.i: Timer.cpp.i
-.PHONY : Timer.i
+src/Timer.i: src/Timer.cpp.i
+.PHONY : src/Timer.i
 
 # target to preprocess a source file
-Timer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyCppExecutable.dir/build.make CMakeFiles/MyCppExecutable.dir/Timer.cpp.i
-.PHONY : Timer.cpp.i
+src/Timer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pomodoro.dir/build.make CMakeFiles/pomodoro.dir/src/Timer.cpp.i
+.PHONY : src/Timer.cpp.i
 
-Timer.s: Timer.cpp.s
-.PHONY : Timer.s
+src/Timer.s: src/Timer.cpp.s
+.PHONY : src/Timer.s
 
 # target to generate assembly for a file
-Timer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyCppExecutable.dir/build.make CMakeFiles/MyCppExecutable.dir/Timer.cpp.s
-.PHONY : Timer.cpp.s
+src/Timer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pomodoro.dir/build.make CMakeFiles/pomodoro.dir/src/Timer.cpp.s
+.PHONY : src/Timer.cpp.s
 
-main.o: main.cpp.o
-.PHONY : main.o
+src/main.o: src/main.cpp.o
+.PHONY : src/main.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyCppExecutable.dir/build.make CMakeFiles/MyCppExecutable.dir/main.cpp.o
-.PHONY : main.cpp.o
+src/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pomodoro.dir/build.make CMakeFiles/pomodoro.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
 
-main.i: main.cpp.i
-.PHONY : main.i
+src/main.i: src/main.cpp.i
+.PHONY : src/main.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyCppExecutable.dir/build.make CMakeFiles/MyCppExecutable.dir/main.cpp.i
-.PHONY : main.cpp.i
+src/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pomodoro.dir/build.make CMakeFiles/pomodoro.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+src/main.s: src/main.cpp.s
+.PHONY : src/main.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyCppExecutable.dir/build.make CMakeFiles/MyCppExecutable.dir/main.cpp.s
-.PHONY : main.cpp.s
+src/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pomodoro.dir/build.make CMakeFiles/pomodoro.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
 
 # Help Target
 help:
@@ -210,16 +185,13 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... MyCppExecutable"
-	@echo "... Prompt.o"
-	@echo "... Prompt.i"
-	@echo "... Prompt.s"
-	@echo "... Timer.o"
-	@echo "... Timer.i"
-	@echo "... Timer.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... pomodoro"
+	@echo "... src/Timer.o"
+	@echo "... src/Timer.i"
+	@echo "... src/Timer.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
 .PHONY : help
 
 
@@ -231,7 +203,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -P /home/waifu/projects/pomodoro/build/CMakeFiles/VerifyGlobs.cmake
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

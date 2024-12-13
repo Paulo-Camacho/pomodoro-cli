@@ -151,21 +151,6 @@ CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 //Value Computed by CMake
 CMAKE_PROJECT_NAME:STATIC=pomodoro
 
-//Value Computed by CMake
-CMAKE_PROJECT_VERSION:STATIC=1.0.1
-
-//Value Computed by CMake
-CMAKE_PROJECT_VERSION_MAJOR:STATIC=1
-
-//Value Computed by CMake
-CMAKE_PROJECT_VERSION_MINOR:STATIC=0
-
-//Value Computed by CMake
-CMAKE_PROJECT_VERSION_PATCH:STATIC=1
-
-//Value Computed by CMake
-CMAKE_PROJECT_VERSION_TWEAK:STATIC=
-
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
 
@@ -231,14 +216,8 @@ CMAKE_TAPI:FILEPATH=CMAKE_TAPI-NOTFOUND
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
-//Value Computed by CMake
-MyCppProject_BINARY_DIR:STATIC=/home/waifu/projects/pomodoro/build
-
-//Value Computed by CMake
-MyCppProject_IS_TOP_LEVEL:STATIC=ON
-
-//Value Computed by CMake
-MyCppProject_SOURCE_DIR:STATIC=/home/waifu/projects/pomodoro
+//The directory containing a CMake configuration file for SFML.
+SFML_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/SFML
 
 //Value Computed by CMake
 pomodoro_BINARY_DIR:STATIC=/home/waifu/projects/pomodoro/build
