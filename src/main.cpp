@@ -2,6 +2,6 @@
 
 int main()
 {
-    Timer example(0.01);
+    Timer example(1);
     example.logic();
 }

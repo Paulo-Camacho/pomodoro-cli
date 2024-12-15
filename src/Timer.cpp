@@ -9,7 +9,7 @@ Timer::Timer(double t) : totalSeconds(t * 60) {}
 
 void Timer::logic()
 {
-    system("paplay ~/projects/pomodoro/assests/ok.mp3");
+    system("paplay ~/projects/pomodoro/assests/letsDoThis.mp3");
     for(int i = 0; i <= totalSeconds; ++i) //  This will only iterate if i is >= to 0.
     {
         seconds = i;
@@ -18,5 +18,5 @@ void Timer::logic()
         std::cout << "\rSECONDS: " << seconds << " MINUTES : " << minutes << std::flush;
     }
     std::cout << "\nAll done!" << std::endl; 
-    system("paplay ~/projects/pomodoro/assests/piano.mp3");
+    system("paplay ~/projects/pomodoro/assests/done.wav");
 }
