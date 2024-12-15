@@ -1,7 +1,8 @@
 #include "Timer.hpp"
+#include "Subject.hpp"
 
 int main()
 {
-    Timer example(1);
-    example.logic();
+    Timer clock(1);
+    clock.logic();
 }

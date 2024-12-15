@@ -6,7 +6,11 @@ set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 # Add the executable
-set(SOURCE_FILES src/Timer.cpp src/main.cpp)
+set(SOURCE_FILES 
+    src/Timer.cpp 
+    src/Subject.cpp 
+    src/main.cpp
+)
 add_executable(pomodoro ${SOURCE_FILES})
 
 # Include the directory for header files

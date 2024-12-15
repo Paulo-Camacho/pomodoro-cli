@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/pomodoro.dir/src/Subject.cpp.o"
+  "CMakeFiles/pomodoro.dir/src/Subject.cpp.o.d"
   "CMakeFiles/pomodoro.dir/src/Timer.cpp.o"
   "CMakeFiles/pomodoro.dir/src/Timer.cpp.o.d"
   "CMakeFiles/pomodoro.dir/src/main.cpp.o"

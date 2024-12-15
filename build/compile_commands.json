@@ -7,6 +7,12 @@
 },
 {
   "directory": "/home/waifu/projects/pomodoro/build",
+  "command": "/usr/bin/clang++  -I/home/waifu/projects/pomodoro/include -g -std=gnu++20 -o CMakeFiles/pomodoro.dir/src/Subject.cpp.o -c /home/waifu/projects/pomodoro/src/Subject.cpp",
+  "file": "/home/waifu/projects/pomodoro/src/Subject.cpp",
+  "output": "CMakeFiles/pomodoro.dir/src/Subject.cpp.o"
+},
+{
+  "directory": "/home/waifu/projects/pomodoro/build",
   "command": "/usr/bin/clang++  -I/home/waifu/projects/pomodoro/include -g -std=gnu++20 -o CMakeFiles/pomodoro.dir/src/main.cpp.o -c /home/waifu/projects/pomodoro/src/main.cpp",
   "file": "/home/waifu/projects/pomodoro/src/main.cpp",
   "output": "CMakeFiles/pomodoro.dir/src/main.cpp.o"

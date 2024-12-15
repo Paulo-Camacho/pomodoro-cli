@@ -129,6 +129,30 @@ pomodoro/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pomodoro.dir/build.make CMakeFiles/pomodoro.dir/build
 .PHONY : pomodoro/fast
 
+src/Subject.o: src/Subject.cpp.o
+.PHONY : src/Subject.o
+
+# target to build an object file
+src/Subject.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pomodoro.dir/build.make CMakeFiles/pomodoro.dir/src/Subject.cpp.o
+.PHONY : src/Subject.cpp.o
+
+src/Subject.i: src/Subject.cpp.i
+.PHONY : src/Subject.i
+
+# target to preprocess a source file
+src/Subject.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pomodoro.dir/build.make CMakeFiles/pomodoro.dir/src/Subject.cpp.i
+.PHONY : src/Subject.cpp.i
+
+src/Subject.s: src/Subject.cpp.s
+.PHONY : src/Subject.s
+
+# target to generate assembly for a file
+src/Subject.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pomodoro.dir/build.make CMakeFiles/pomodoro.dir/src/Subject.cpp.s
+.PHONY : src/Subject.cpp.s
+
 src/Timer.o: src/Timer.cpp.o
 .PHONY : src/Timer.o
 
@@ -186,6 +210,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... pomodoro"
+	@echo "... src/Subject.o"
+	@echo "... src/Subject.i"
+	@echo "... src/Subject.s"
 	@echo "... src/Timer.o"
 	@echo "... src/Timer.i"
 	@echo "... src/Timer.s"

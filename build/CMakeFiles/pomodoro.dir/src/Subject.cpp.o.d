@@ -1,6 +1,5 @@
-CMakeFiles/pomodoro.dir/src/main.cpp.o: \
-  /home/waifu/projects/pomodoro/src/main.cpp \
-  /home/waifu/projects/pomodoro/include/Timer.hpp \
+CMakeFiles/pomodoro.dir/src/Subject.cpp.o: \
+  /home/waifu/projects/pomodoro/src/Subject.cpp \
   /home/waifu/projects/pomodoro/include/Subject.hpp \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/string \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/requires_hosted.h \

@@ -3,13 +3,15 @@
 #include <chrono>
 #include <thread>
 #include <cstdlib>
-// NO PAUSING FEATURE ARRRGHHHHH!!!
-// This flavor of my timer increaments from the given value.
+
+// I will not include pausing feature. FULL SEND! 
 Timer::Timer(double t) : totalSeconds(t * 60) {}
 
 void Timer::logic()
 {
+    std::cout << "STARTING TIMER OF " << totalSeconds / 60 << " MINUTES" << std::endl;
     system("paplay ~/projects/pomodoro/assests/letsDoThis.mp3");
+
     for(int i = 0; i <= totalSeconds; ++i) //  This will only iterate if i is >= to 0.
     {
         seconds = i;
