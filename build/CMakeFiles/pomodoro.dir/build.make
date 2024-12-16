@@ -69,10 +69,24 @@ include CMakeFiles/pomodoro.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/pomodoro.dir/flags.make
 
+CMakeFiles/pomodoro.dir/src/Request.cpp.o: CMakeFiles/pomodoro.dir/flags.make
+CMakeFiles/pomodoro.dir/src/Request.cpp.o: /home/waifu/projects/pomodoro/src/Request.cpp
+CMakeFiles/pomodoro.dir/src/Request.cpp.o: CMakeFiles/pomodoro.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/waifu/projects/pomodoro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/pomodoro.dir/src/Request.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pomodoro.dir/src/Request.cpp.o -MF CMakeFiles/pomodoro.dir/src/Request.cpp.o.d -o CMakeFiles/pomodoro.dir/src/Request.cpp.o -c /home/waifu/projects/pomodoro/src/Request.cpp
+
+CMakeFiles/pomodoro.dir/src/Request.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/pomodoro.dir/src/Request.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/waifu/projects/pomodoro/src/Request.cpp > CMakeFiles/pomodoro.dir/src/Request.cpp.i
+
+CMakeFiles/pomodoro.dir/src/Request.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/pomodoro.dir/src/Request.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/waifu/projects/pomodoro/src/Request.cpp -o CMakeFiles/pomodoro.dir/src/Request.cpp.s
+
 CMakeFiles/pomodoro.dir/src/Timer.cpp.o: CMakeFiles/pomodoro.dir/flags.make
 CMakeFiles/pomodoro.dir/src/Timer.cpp.o: /home/waifu/projects/pomodoro/src/Timer.cpp
 CMakeFiles/pomodoro.dir/src/Timer.cpp.o: CMakeFiles/pomodoro.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/waifu/projects/pomodoro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/pomodoro.dir/src/Timer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/waifu/projects/pomodoro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/pomodoro.dir/src/Timer.cpp.o"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pomodoro.dir/src/Timer.cpp.o -MF CMakeFiles/pomodoro.dir/src/Timer.cpp.o.d -o CMakeFiles/pomodoro.dir/src/Timer.cpp.o -c /home/waifu/projects/pomodoro/src/Timer.cpp
 
 CMakeFiles/pomodoro.dir/src/Timer.cpp.i: cmake_force
@@ -83,24 +97,24 @@ CMakeFiles/pomodoro.dir/src/Timer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/pomodoro.dir/src/Timer.cpp.s"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/waifu/projects/pomodoro/src/Timer.cpp -o CMakeFiles/pomodoro.dir/src/Timer.cpp.s
 
-CMakeFiles/pomodoro.dir/src/Subject.cpp.o: CMakeFiles/pomodoro.dir/flags.make
-CMakeFiles/pomodoro.dir/src/Subject.cpp.o: /home/waifu/projects/pomodoro/src/Subject.cpp
-CMakeFiles/pomodoro.dir/src/Subject.cpp.o: CMakeFiles/pomodoro.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/waifu/projects/pomodoro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/pomodoro.dir/src/Subject.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pomodoro.dir/src/Subject.cpp.o -MF CMakeFiles/pomodoro.dir/src/Subject.cpp.o.d -o CMakeFiles/pomodoro.dir/src/Subject.cpp.o -c /home/waifu/projects/pomodoro/src/Subject.cpp
+CMakeFiles/pomodoro.dir/src/Session.cpp.o: CMakeFiles/pomodoro.dir/flags.make
+CMakeFiles/pomodoro.dir/src/Session.cpp.o: /home/waifu/projects/pomodoro/src/Session.cpp
+CMakeFiles/pomodoro.dir/src/Session.cpp.o: CMakeFiles/pomodoro.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/waifu/projects/pomodoro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/pomodoro.dir/src/Session.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pomodoro.dir/src/Session.cpp.o -MF CMakeFiles/pomodoro.dir/src/Session.cpp.o.d -o CMakeFiles/pomodoro.dir/src/Session.cpp.o -c /home/waifu/projects/pomodoro/src/Session.cpp
 
-CMakeFiles/pomodoro.dir/src/Subject.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/pomodoro.dir/src/Subject.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/waifu/projects/pomodoro/src/Subject.cpp > CMakeFiles/pomodoro.dir/src/Subject.cpp.i
+CMakeFiles/pomodoro.dir/src/Session.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/pomodoro.dir/src/Session.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/waifu/projects/pomodoro/src/Session.cpp > CMakeFiles/pomodoro.dir/src/Session.cpp.i
 
-CMakeFiles/pomodoro.dir/src/Subject.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/pomodoro.dir/src/Subject.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/waifu/projects/pomodoro/src/Subject.cpp -o CMakeFiles/pomodoro.dir/src/Subject.cpp.s
+CMakeFiles/pomodoro.dir/src/Session.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/pomodoro.dir/src/Session.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/waifu/projects/pomodoro/src/Session.cpp -o CMakeFiles/pomodoro.dir/src/Session.cpp.s
 
 CMakeFiles/pomodoro.dir/src/main.cpp.o: CMakeFiles/pomodoro.dir/flags.make
 CMakeFiles/pomodoro.dir/src/main.cpp.o: /home/waifu/projects/pomodoro/src/main.cpp
 CMakeFiles/pomodoro.dir/src/main.cpp.o: CMakeFiles/pomodoro.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/waifu/projects/pomodoro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/pomodoro.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/waifu/projects/pomodoro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/pomodoro.dir/src/main.cpp.o"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pomodoro.dir/src/main.cpp.o -MF CMakeFiles/pomodoro.dir/src/main.cpp.o.d -o CMakeFiles/pomodoro.dir/src/main.cpp.o -c /home/waifu/projects/pomodoro/src/main.cpp
 
 CMakeFiles/pomodoro.dir/src/main.cpp.i: cmake_force
@@ -113,15 +127,17 @@ CMakeFiles/pomodoro.dir/src/main.cpp.s: cmake_force
 
 # Object files for target pomodoro
 pomodoro_OBJECTS = \
+"CMakeFiles/pomodoro.dir/src/Request.cpp.o" \
 "CMakeFiles/pomodoro.dir/src/Timer.cpp.o" \
-"CMakeFiles/pomodoro.dir/src/Subject.cpp.o" \
+"CMakeFiles/pomodoro.dir/src/Session.cpp.o" \
 "CMakeFiles/pomodoro.dir/src/main.cpp.o"
 
 # External object files for target pomodoro
 pomodoro_EXTERNAL_OBJECTS =
 
+pomodoro: CMakeFiles/pomodoro.dir/src/Request.cpp.o
 pomodoro: CMakeFiles/pomodoro.dir/src/Timer.cpp.o
-pomodoro: CMakeFiles/pomodoro.dir/src/Subject.cpp.o
+pomodoro: CMakeFiles/pomodoro.dir/src/Session.cpp.o
 pomodoro: CMakeFiles/pomodoro.dir/src/main.cpp.o
 pomodoro: CMakeFiles/pomodoro.dir/build.make
 pomodoro: /usr/lib/x86_64-linux-gnu/libsfml-graphics.so.2.6.1
@@ -130,7 +146,7 @@ pomodoro: /usr/lib/x86_64-linux-gnu/libsfml-audio.so.2.6.1
 pomodoro: /usr/lib/x86_64-linux-gnu/libsfml-window.so.2.6.1
 pomodoro: /usr/lib/x86_64-linux-gnu/libsfml-system.so.2.6.1
 pomodoro: CMakeFiles/pomodoro.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/waifu/projects/pomodoro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable pomodoro"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/waifu/projects/pomodoro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable pomodoro"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/pomodoro.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -1,6 +1,6 @@
-CMakeFiles/pomodoro.dir/src/MyClasses.cpp.o: \
-  /home/waifu/projects/pomodoro/src/MyClasses.cpp \
-  /home/waifu/projects/pomodoro/include/MyClasses.hpp \
+CMakeFiles/pomodoro.dir/src/Prompt.cpp.o: \
+  /home/waifu/projects/pomodoro/src/Prompt.cpp \
+  /home/waifu/projects/pomodoro/include/Prompt.hpp \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/string \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/requires_hosted.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/x86_64-linux-gnu/c++/13/bits/c++config.h \
@@ -146,6 +146,7 @@ CMakeFiles/pomodoro.dir/src/MyClasses.cpp.o: \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/uses_allocator_args.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/tuple \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/ranges_util.h \
+  /home/waifu/projects/pomodoro/include/Subject.hpp \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/iostream \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/ostream \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/ios \

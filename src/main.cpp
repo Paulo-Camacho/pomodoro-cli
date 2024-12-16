@@ -1,8 +1,9 @@
 #include "Timer.hpp"
-#include "Subject.hpp"
 
-int main()
+
+int main(int argc, char* argv[])
 {
-    Timer clock(1);
-    clock.logic();
+
+   
+    return 0;
 }

@@ -129,29 +129,53 @@ pomodoro/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pomodoro.dir/build.make CMakeFiles/pomodoro.dir/build
 .PHONY : pomodoro/fast
 
-src/Subject.o: src/Subject.cpp.o
-.PHONY : src/Subject.o
+src/Request.o: src/Request.cpp.o
+.PHONY : src/Request.o
 
 # target to build an object file
-src/Subject.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pomodoro.dir/build.make CMakeFiles/pomodoro.dir/src/Subject.cpp.o
-.PHONY : src/Subject.cpp.o
+src/Request.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pomodoro.dir/build.make CMakeFiles/pomodoro.dir/src/Request.cpp.o
+.PHONY : src/Request.cpp.o
 
-src/Subject.i: src/Subject.cpp.i
-.PHONY : src/Subject.i
+src/Request.i: src/Request.cpp.i
+.PHONY : src/Request.i
 
 # target to preprocess a source file
-src/Subject.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pomodoro.dir/build.make CMakeFiles/pomodoro.dir/src/Subject.cpp.i
-.PHONY : src/Subject.cpp.i
+src/Request.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pomodoro.dir/build.make CMakeFiles/pomodoro.dir/src/Request.cpp.i
+.PHONY : src/Request.cpp.i
 
-src/Subject.s: src/Subject.cpp.s
-.PHONY : src/Subject.s
+src/Request.s: src/Request.cpp.s
+.PHONY : src/Request.s
 
 # target to generate assembly for a file
-src/Subject.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pomodoro.dir/build.make CMakeFiles/pomodoro.dir/src/Subject.cpp.s
-.PHONY : src/Subject.cpp.s
+src/Request.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pomodoro.dir/build.make CMakeFiles/pomodoro.dir/src/Request.cpp.s
+.PHONY : src/Request.cpp.s
+
+src/Session.o: src/Session.cpp.o
+.PHONY : src/Session.o
+
+# target to build an object file
+src/Session.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pomodoro.dir/build.make CMakeFiles/pomodoro.dir/src/Session.cpp.o
+.PHONY : src/Session.cpp.o
+
+src/Session.i: src/Session.cpp.i
+.PHONY : src/Session.i
+
+# target to preprocess a source file
+src/Session.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pomodoro.dir/build.make CMakeFiles/pomodoro.dir/src/Session.cpp.i
+.PHONY : src/Session.cpp.i
+
+src/Session.s: src/Session.cpp.s
+.PHONY : src/Session.s
+
+# target to generate assembly for a file
+src/Session.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pomodoro.dir/build.make CMakeFiles/pomodoro.dir/src/Session.cpp.s
+.PHONY : src/Session.cpp.s
 
 src/Timer.o: src/Timer.cpp.o
 .PHONY : src/Timer.o
@@ -210,9 +234,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... pomodoro"
-	@echo "... src/Subject.o"
-	@echo "... src/Subject.i"
-	@echo "... src/Subject.s"
+	@echo "... src/Request.o"
+	@echo "... src/Request.i"
+	@echo "... src/Request.s"
+	@echo "... src/Session.o"
+	@echo "... src/Session.i"
+	@echo "... src/Session.s"
 	@echo "... src/Timer.o"
 	@echo "... src/Timer.i"
 	@echo "... src/Timer.s"

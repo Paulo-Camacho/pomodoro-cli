@@ -8,7 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/waifu/projects/pomodoro/src/Subject.cpp" "CMakeFiles/pomodoro.dir/src/Subject.cpp.o" "gcc" "CMakeFiles/pomodoro.dir/src/Subject.cpp.o.d"
+  "/home/waifu/projects/pomodoro/src/Request.cpp" "CMakeFiles/pomodoro.dir/src/Request.cpp.o" "gcc" "CMakeFiles/pomodoro.dir/src/Request.cpp.o.d"
+  "/home/waifu/projects/pomodoro/src/Session.cpp" "CMakeFiles/pomodoro.dir/src/Session.cpp.o" "gcc" "CMakeFiles/pomodoro.dir/src/Session.cpp.o.d"
   "/home/waifu/projects/pomodoro/src/Timer.cpp" "CMakeFiles/pomodoro.dir/src/Timer.cpp.o" "gcc" "CMakeFiles/pomodoro.dir/src/Timer.cpp.o.d"
   "/home/waifu/projects/pomodoro/src/main.cpp" "CMakeFiles/pomodoro.dir/src/main.cpp.o" "gcc" "CMakeFiles/pomodoro.dir/src/main.cpp.o.d"
   )
