@@ -129,30 +129,6 @@ pomodoro/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pomodoro.dir/build.make CMakeFiles/pomodoro.dir/build
 .PHONY : pomodoro/fast
 
-src/Request.o: src/Request.cpp.o
-.PHONY : src/Request.o
-
-# target to build an object file
-src/Request.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pomodoro.dir/build.make CMakeFiles/pomodoro.dir/src/Request.cpp.o
-.PHONY : src/Request.cpp.o
-
-src/Request.i: src/Request.cpp.i
-.PHONY : src/Request.i
-
-# target to preprocess a source file
-src/Request.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pomodoro.dir/build.make CMakeFiles/pomodoro.dir/src/Request.cpp.i
-.PHONY : src/Request.cpp.i
-
-src/Request.s: src/Request.cpp.s
-.PHONY : src/Request.s
-
-# target to generate assembly for a file
-src/Request.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pomodoro.dir/build.make CMakeFiles/pomodoro.dir/src/Request.cpp.s
-.PHONY : src/Request.cpp.s
-
 src/Session.o: src/Session.cpp.o
 .PHONY : src/Session.o
 
@@ -234,9 +210,6 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... pomodoro"
-	@echo "... src/Request.o"
-	@echo "... src/Request.i"
-	@echo "... src/Request.s"
 	@echo "... src/Session.o"
 	@echo "... src/Session.i"
 	@echo "... src/Session.s"

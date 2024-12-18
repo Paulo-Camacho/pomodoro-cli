@@ -1,17 +1,20 @@
-#ifndef SESSION_HPP
-#define SESSION_HPP
+#ifndef SESSION_H
+#define SESSION_H
 #include <string>
 
 class Session
 {
 public:
+    // Constructors
     Session(const std::string& s, double d);
+
+    // Functions 
     const std::string& getSubject() const;
     double getDuration();
 
 private:
     const std::string& subject;
-    double duration;
+    double duration{};
 };
 
-#endif // SESSION_HPP
+#endif // SESSION_H

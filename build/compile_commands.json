@@ -1,9 +1,9 @@
 [
 {
   "directory": "/home/waifu/projects/pomodoro/build",
-  "command": "/usr/bin/clang++  -I/home/waifu/projects/pomodoro/include -g -std=gnu++20 -o CMakeFiles/pomodoro.dir/src/Request.cpp.o -c /home/waifu/projects/pomodoro/src/Request.cpp",
-  "file": "/home/waifu/projects/pomodoro/src/Request.cpp",
-  "output": "CMakeFiles/pomodoro.dir/src/Request.cpp.o"
+  "command": "/usr/bin/clang++  -I/home/waifu/projects/pomodoro/include -g -std=gnu++20 -o CMakeFiles/pomodoro.dir/src/main.cpp.o -c /home/waifu/projects/pomodoro/src/main.cpp",
+  "file": "/home/waifu/projects/pomodoro/src/main.cpp",
+  "output": "CMakeFiles/pomodoro.dir/src/main.cpp.o"
 },
 {
   "directory": "/home/waifu/projects/pomodoro/build",
@@ -16,11 +16,5 @@
   "command": "/usr/bin/clang++  -I/home/waifu/projects/pomodoro/include -g -std=gnu++20 -o CMakeFiles/pomodoro.dir/src/Session.cpp.o -c /home/waifu/projects/pomodoro/src/Session.cpp",
   "file": "/home/waifu/projects/pomodoro/src/Session.cpp",
   "output": "CMakeFiles/pomodoro.dir/src/Session.cpp.o"
-},
-{
-  "directory": "/home/waifu/projects/pomodoro/build",
-  "command": "/usr/bin/clang++  -I/home/waifu/projects/pomodoro/include -g -std=gnu++20 -o CMakeFiles/pomodoro.dir/src/main.cpp.o -c /home/waifu/projects/pomodoro/src/main.cpp",
-  "file": "/home/waifu/projects/pomodoro/src/main.cpp",
-  "output": "CMakeFiles/pomodoro.dir/src/main.cpp.o"
 }
 ]

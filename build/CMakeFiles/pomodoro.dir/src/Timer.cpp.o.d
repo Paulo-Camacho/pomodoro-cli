@@ -1,6 +1,6 @@
 CMakeFiles/pomodoro.dir/src/Timer.cpp.o: \
   /home/waifu/projects/pomodoro/src/Timer.cpp \
-  /home/waifu/projects/pomodoro/include/Timer.hpp \
+  /home/waifu/projects/pomodoro/include/Timer.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/iostream \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/requires_hosted.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/x86_64-linux-gnu/c++/13/bits/c++config.h \

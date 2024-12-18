@@ -7,10 +7,9 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 # Add the executable
 set(SOURCE_FILES 
-    src/Request.cpp
+    src/main.cpp
     src/Timer.cpp 
     src/Session.cpp 
-    src/main.cpp
 )
 add_executable(pomodoro ${SOURCE_FILES})
 

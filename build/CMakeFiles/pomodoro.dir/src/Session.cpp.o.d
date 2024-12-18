@@ -1,6 +1,6 @@
 CMakeFiles/pomodoro.dir/src/Session.cpp.o: \
   /home/waifu/projects/pomodoro/src/Session.cpp \
-  /home/waifu/projects/pomodoro/include/Session.hpp \
+  /home/waifu/projects/pomodoro/include/Session.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/string \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/requires_hosted.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/x86_64-linux-gnu/c++/13/bits/c++config.h \
