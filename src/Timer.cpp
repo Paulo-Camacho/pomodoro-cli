@@ -17,7 +17,7 @@ void Timer::logic()
         seconds = i;
         minutes = i / 60.0;
         std::this_thread::sleep_for(std::chrono::seconds(1));
-        std::cout << "\rSECONDS: " << seconds << " MINUTES : " << minutes << std::flush;
+        std::cout << "\rMINUTES: " << minutes << " SECONDS: " << seconds << std::flush;
     }
     std::cout << "\nAll done!" << std::endl; 
     system("paplay ~/projects/pomodoro/assests/done.wav");
