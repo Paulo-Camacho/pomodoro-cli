@@ -8,6 +8,7 @@ public:
     Session(const std::string& s, double d);
     const std::string& getSubject() const;
     double getDuration();
+
 private:
     const std::string& subject;
     double duration;

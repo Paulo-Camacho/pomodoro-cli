@@ -1,6 +1,6 @@
-#ifndef REQUEST_HPP
-#define REQUEST_HPP
-#include "Session.hpp"
+#ifndef REQUEST_H
+#define REQUEST_H
+#include "Session.h"
 
 class Request
 {
@@ -12,4 +12,4 @@ private:
     double q;
 };
 
-#endif // REQUEST_HPP
+#endif // REQUEST_H

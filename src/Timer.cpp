@@ -1,4 +1,4 @@
-#include "Timer.hpp"
+#include "Timer.h"
 #include <iostream>
 #include <chrono>
 #include <thread>

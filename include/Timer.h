@@ -1,5 +1,5 @@
-#ifndef TIMER_HPP 
-#define TIMER_HPP 
+#ifndef TIMER_H 
+#define TIMER_H 
 
 class Timer
 {
@@ -12,4 +12,4 @@ private:
     int seconds;
 };
 
-#endif // TIMER_HPP
+#endif // TIMER_H
