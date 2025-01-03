@@ -4,7 +4,6 @@
 
 int main()
 {
-    std::cout << "Hello, world " << std::endl;
-    Timer example(1);
+    Timer example(0.5);
     example.printTimer();
 }
