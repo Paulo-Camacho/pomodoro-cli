@@ -36,14 +36,14 @@ void Timer::printTimer()
     
     sf::Music closing;
 
-    if (!closing.openFromFile("./letsDoThis.mp3")) // Load the MP3 file
+    if (!closing.openFromFile("./ending.mp3")) // Load the MP3 file
     {
         std::cerr << "Failed to load the MP3 file. Check the path!" << std::endl;
         return;
     }
 
     closing.play();
-    std::cout << "\nPlaying audio: letsDoThis.mp3" << std::endl;
+    std::cout << "\nPlaying audio: ending.mp3" << std::endl;
 
     while (closing.getStatus() == sf::Music::Playing)
     {
