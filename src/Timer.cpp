@@ -24,12 +24,13 @@ void Timer::printTimer()
         std::this_thread::sleep_for(std::chrono::milliseconds(100));
     }
 
-    // Actual timer incrementing
-    for (int i = 0; i <= time; i++)
+    // Actual incrementing timer logic.
+    for (int i = 1; i <= time; i++)
     {
         std::this_thread::sleep_for(std::chrono::seconds(1));
-        int minutes = (time - i) / 60;
-        int seconds = time - i;
+        int totalTime = (time - i);
+        int minutes   = totalTime / 60;
+        int seconds   = totalTime % 60;
         std::cout << "\rMINUTES REMAINING: " << minutes << " SECONDS REMAINING: " << seconds << std::flush;
 
     }

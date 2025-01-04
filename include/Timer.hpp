@@ -8,6 +8,7 @@ class Timer
     void printTimer();
     private:
     double time;
+    int totalTime;
     int minutes;
     int seconds;
 };

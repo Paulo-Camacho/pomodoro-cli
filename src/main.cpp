@@ -4,6 +4,6 @@
 
 int main()
 {
-    Timer example(0.5);
+    Timer example(25);
     example.printTimer();
 }
