@@ -11,6 +11,7 @@ class Timer
     int totalTime;
     int minutes;
     int seconds;
+    bool run;
 };
 
 #endif // TIMER_HPP
