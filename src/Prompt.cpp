@@ -16,12 +16,14 @@ void Prompt::printMenu() {
     if (choice == start) {
         Timer timer(25); // 25 minutes
         timer.printTimer();
+        printMenu(); // Recursive call to display menu again
     } else if (choice == custom) {
         int customTime;
         std::cout << "Enter custom time in minutes: ";
         std::cin >> customTime;
         Timer timer(customTime);
         timer.printTimer();
+        printMenu(); // Recursive call to display menu again
     } else if (choice == quit) {
         std::cout << "Exiting...\n";
     } else {

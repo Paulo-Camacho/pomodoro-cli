@@ -5,7 +5,6 @@
 #include <thread>
 #include <filesystem>
 
-// Constructor
 Timer::Timer(double t) : time(t * 60) {}
 
 void playAudio(const std::string& relativePath)
@@ -26,23 +25,29 @@ void playAudio(const std::string& relativePath)
 // Timer function
 void Timer::printTimer()
 {
-    bool run = true;
+    bool run = false;
     int i = 0;
     int log{};
     playAudio("go.mp3");
-    while (run) {
+    while (!run) {
         std::this_thread::sleep_for(std::chrono::seconds(1));
+
         i++;
         log++;
         std::cout << "\rIt has been " << i << " seconds. " << std::flush;
 
-        if (i == time) // (i == 1500)` for 25 minutes
+        std::cout << "time in secconds is set to: " << time << std::endl;
+        if (i == time) // i == 1500 for 25 minutes
         {
             // Play audio notification (relative to `src`)
             playAudio("ending.mp3");
+            run = true;
+
         }
 
     }
+    
+    std::cout << "Congrats, it's been " << log << " seconds and " << log * 60 << " minutes " << std::endl;
 }
 
 
