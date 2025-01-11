@@ -8,10 +8,11 @@ class Timer
     void printTimer();
     private:
     double time;
-    int totalTime;
     int minutes;
     int seconds;
     bool run;
+    int counter;
+    double log;
 };
 
 #endif // TIMER_HPP
