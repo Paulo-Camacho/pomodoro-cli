@@ -28,7 +28,15 @@ void Prompt::printMenu()
         printMenu();
     } else if (choice == quit) {
         std::cout << "Exiting...\n";
-    } else {
+
+    } else if (choice == 'd') {
+        Timer timer(0.1);
+        timer.printTimer();
+        printMenu();
+    }  
+
+
+    else {
         std::cout << "Invalid choice. Try again.\n";
         printMenu();
     }
