@@ -2,9 +2,11 @@
 #include "Timer.hpp"
 #include <iostream>
 
+// When these variables are printed, the words inherit the chars that I defined
 Prompt::Prompt(char s, char c, char q) : start(s), custom(c), quit (q) {}
 
-void Prompt::printMenu() {
+void Prompt::printMenu() 
+{
     std::cout << "Menu Options:\n";
     std::cout << start << ": Start 25-minute Timer\n";
     std::cout << custom << ": Set Custom Timer\n";
@@ -14,20 +16,20 @@ void Prompt::printMenu() {
     std::cin >> choice;
 
     if (choice == start) {
-        Timer timer(25); // 25 minutes
+        Timer timer(25); 
         timer.printTimer();
-        printMenu(); // Recursive call to display menu again
+        printMenu();
     } else if (choice == custom) {
-        int customTime;
+        double customTime;
         std::cout << "Enter custom time in minutes: ";
         std::cin >> customTime;
         Timer timer(customTime);
         timer.printTimer();
-        printMenu(); // Recursive call to display menu again
+        printMenu();
     } else if (choice == quit) {
         std::cout << "Exiting...\n";
     } else {
         std::cout << "Invalid choice. Try again.\n";
-        printMenu(); // Recursive call to display menu again
+        printMenu();
     }
 }

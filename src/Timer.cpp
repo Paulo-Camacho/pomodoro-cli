@@ -5,31 +5,24 @@
 
 Timer::Timer(double t) : time(t * 60) {}
 
-// Timer function
 void Timer::printTimer()
 {
-    bool run = true;
-    int counter = 0;
-    double log{};
-
-
-
-    while (run) 
+    bool run = false;
+    double counter{}; 
+    double     log{};
+    
+    while (!run) 
     {
-
         std::this_thread::sleep_for(std::chrono::seconds(1));
-
-        std::cout << "DEBUG: time in seconds" << time << std::endl;
-
-        std::cout << "\rIt has been " << counter << " seconds. " << std::flush;
+        ++counter;
+        ++log;
+        std::cout << "\rIt has been " << counter << " seconds and " << counter / 60 << " minutes" << std::flush;
         if (counter == time) // i == 1500 for 25 minutes
         {
-            run = false;
+            std::cout << "Inner loop ran, this is the number of total seconds set " << counter << std::endl;
+            run = true;
         }
 
-        counter++;
-        log++;
     }
-    
-    std::cout << "Congrats - Minutes:  " << log * 60 << " and Seconds : " << log << std::endl;
+    std::cout << "Congrats it's been: " << log / 60 << " minutes and " << log << " seconds " << std::endl;
 }

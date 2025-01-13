@@ -6,10 +6,9 @@
 
 
 int main() {
-    // Create an instance of Prompt
-    Prompt menu('s', 'c', 'q'); // Example arguments for start, custom, and quit
 
-    // Call the printMenu method
+    Prompt menu('s', 'c', 'q');
+
     menu.printMenu();
 
     return 0;
