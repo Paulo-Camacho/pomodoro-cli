@@ -1,18 +1,21 @@
 #ifndef TIMER_HPP
 #define TIMER_HPP
+#include <fstream>
+class Timer {
+public:
+    Timer(double t);
+    void printTimer();
+    auto startTime();
+    auto endTime();
 
-class Timer
-{
-    public:
-        Timer(double t);
-        void printTimer();
-    private:
-        double time;
-        int minutes;
-        int seconds;
-        bool run;
-        double counter;
-        double log;
+    double logTime();
+private:
+    double time;
+    double log;
+    double counter;
+    bool   stop;
+    std::ofstream logging;
+    
 };
 
 #endif // TIMER_HPP

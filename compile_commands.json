@@ -1,0 +1,19 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/g++",
+      "-std=c++17",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-c",
+      "-o",
+      "build/Timer.o",
+      "src/Timer.cpp"
+    ],
+    "directory": "/home/waifu/Projects/Pomodoro",
+    "file": "/home/waifu/Projects/Pomodoro/src/Timer.cpp",
+    "output": "/home/waifu/Projects/Pomodoro/build/Timer.o"
+  }
+]

@@ -9,6 +9,10 @@ TARGET = timer
 
 # Targets
 all: $(BUILD_DIR) $(TARGET)
+	./timer
+
+$(BUILD_DIR):
+	mkdir -p $(BUILD_DIR)
 
 $(TARGET): $(OBJECTS)
 	$(CXX) $(CXXFLAGS) -o $@ $^ $(LDFLAGS)
