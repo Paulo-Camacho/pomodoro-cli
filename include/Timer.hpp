@@ -7,8 +7,6 @@ public:
     void printTimer();
     auto startTime();
     auto endTime();
-
-    double logTime();
 private:
     double time;
     double log;

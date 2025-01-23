@@ -21,24 +21,22 @@ void Prompt::printMenu() {
         printMenu();
     } else if (choice == custom) {
         double customTime;
-        std::cout << "Enter custom time in minutes: ";
+        std::cout << "Enter custom time in minutes:" << std::endl;
         std::cin >> customTime;
         Timer timer(customTime);
         timer.printTimer();
         printMenu();
     } else if (choice == quit) {
-        std::cout << "Exiting...\n";
+        std::cout << "Exiting..." << std::endl;
 
     } else if (choice == 'd') {
         Timer timer(0.1);
         timer.printTimer();
         printMenu();
-        double result = timer.logTime(); 
-        std::cout << "This is the logged time " << result << std::endl;
     }  
 
     else {
-        std::cout << "Invalid choice. Try again.\n";
+        std::cout << "Invalid choice. Try again." << std::endl;
         printMenu();
     }
 
