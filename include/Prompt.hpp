@@ -4,12 +4,14 @@
 class Prompt
 {
     public:
-        Prompt(char s, char c, char q);
+        Prompt(char s, char b, char c, char q);
         void printMenu();
     private:
-        char  start;
-        char custom;
-        char   quit;
+        char     start;
+        char  breather;
+        char    custom;
+        char      quit;
+
         double customTime;
 };
 
