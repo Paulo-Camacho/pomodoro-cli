@@ -9,6 +9,40 @@
       "-Werror",
       "-c",
       "-o",
+      "build/main.o",
+      "src/main.cpp"
+    ],
+    "directory": "/home/waifu/Projects/Pomodoro",
+    "file": "/home/waifu/Projects/Pomodoro/src/main.cpp",
+    "output": "/home/waifu/Projects/Pomodoro/build/main.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/g++",
+      "-std=c++17",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-c",
+      "-o",
+      "build/Prompt.o",
+      "src/Prompt.cpp"
+    ],
+    "directory": "/home/waifu/Projects/Pomodoro",
+    "file": "/home/waifu/Projects/Pomodoro/src/Prompt.cpp",
+    "output": "/home/waifu/Projects/Pomodoro/build/Prompt.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/g++",
+      "-std=c++17",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-c",
+      "-o",
       "build/Timer.o",
       "src/Timer.cpp"
     ],

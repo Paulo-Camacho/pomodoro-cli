@@ -1,6 +1,5 @@
 #ifndef PROMPT_HPP
 #define PROMPT_HPP
-
 class Prompt
 {
     public:
@@ -11,8 +10,12 @@ class Prompt
         char  breather;
         char    custom;
         char      quit;
+        char     input;
+
 
         double customTime;
+
+
 };
 
 #endif // PROMPT_HPP

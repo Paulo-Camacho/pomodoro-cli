@@ -1,12 +1,11 @@
 #include <SFML/Graphics.hpp>
 #include <Timer.hpp>
 #include <Prompt.hpp>
+#include <Subject.hpp>
 
 int main() {
 
-    Prompt menu('s', 'b', 'c', 'q');
-
-    menu.printMenu();
-
+    Subject start;
+    start.displayQuestion();
     return 0;
 }

@@ -5,6 +5,7 @@
 // When these variables are printed, the words inherit the chars that I defined
 Prompt::Prompt(char s, char b, char c, char q) : start(s), breather(b), custom(c), quit (q) {}
 
+
 void Prompt::printMenu() {
     std::cout << "Menu Options:\n";
     std::cout << start << ": Start 25-minute Timer" << std::endl;
