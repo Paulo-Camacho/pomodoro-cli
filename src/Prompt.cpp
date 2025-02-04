@@ -3,10 +3,11 @@
 #include <iostream>
 
 // When these variables are printed, the words inherit the chars that I defined
-Prompt::Prompt(char s, char b, char c, char q) : start(s), breather(b), custom(c), quit (q) {}
+Prompt::Prompt(char s, char b, char c, char q) : start(s), breather(b), custom(c), quit (q), check('\0') {}
 
 
-void Prompt::printMenu() {
+// I want to return the value of this function inside of timer.cpp as that class has the log function
+void Prompt::printMenu(const std::string& subject) {
     std::cout << "Menu Options:\n";
     std::cout << start << ": Start 25-minute Timer" << std::endl;
     std::cout << breather << ": Start 5-minute Timer" << std::endl;
@@ -18,30 +19,30 @@ void Prompt::printMenu() {
     std::cin >> choice;
 
     if (choice == start) {
-        Timer timer(25); 
+        Timer timer(25, subject); 
         timer.printTimer();
-        printMenu();
+        printMenu(subject);
     } else if (choice == breather) {
         std::cout << "Enjoy your break!" << std::endl;
-        Timer timer(5);
+        Timer timer(5, subject);
         timer.printTimer();
-        printMenu();
+        printMenu(subject);
     } else if (choice == custom) {
         double customTime;
         std::cout << "Custom Timer" << std::endl;
         std::cin >> customTime;
-        Timer timer(customTime);
+        Timer timer(customTime, subject);
         timer.printTimer();
-        printMenu();
+        printMenu(subject);
     } else if (choice == quit) {
         std::cout << "Exiting..." << std::endl;
     } else if (choice == 'd') {
-        Timer timer(0.1);
+        Timer timer(0.1, subject);
         timer.printTimer();
-        printMenu();
+        printMenu(subject);
     }  
     else {
         std::cout << "Invalid choice. Try again." << std::endl;
-        printMenu();
+        printMenu(subject);
     }
 }

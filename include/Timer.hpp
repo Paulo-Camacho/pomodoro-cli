@@ -1,23 +1,22 @@
 #ifndef TIMER_HPP
 #define TIMER_HPP
+#include <string>
 #include <fstream>
-#include "Subject.hpp"
 
 class Timer 
 {
 public:
-    Timer(double t);
+    Timer(double t, const std::string& subject);
     void printTimer();
     auto startTime();
     auto endTime();
-    void getSubject(const Subject& subject);
 private:
     double time;
     double log;
     double counter;
     bool   stop;
+    std::string logged;
     std::ofstream logging;
-    const Subject* subjectPtr;
 };
 
 #endif // TIMER_HPP

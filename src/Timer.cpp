@@ -1,12 +1,14 @@
 #include <Timer.hpp>
+#include <Prompt.hpp>
 #include <cmath>
 #include <iostream>
 #include <chrono>
 #include <thread>
 #include <fstream>
 #include <cstdlib>
+#include <string>
 
-Timer::Timer(double t) : time(t * 60), log(0), counter(0), stop(false) {}
+Timer::Timer(double t, const std::string& subject) : time(t * 60), log(0), counter(0), stop(false), logged(subject) {}
 
 void Timer::printTimer() {
     // Logging the start and displaying it
@@ -40,15 +42,12 @@ void Timer::printTimer() {
 
     std::cout << "Duration: " << minutes << " minutes and " << seconds << " seconds." << std::endl;
 
+    // I want to add that std::function return value here such that it get's logged with the rest
     std::ofstream logging;
-    logging.open("./newnew.md", std::ios::app);
+    logging.open("./test.md", std::ios::app);
     if (logging.is_open()) {
-        logging << "\nStart time was: " << std::ctime(&rsTime) << "Ending time was " << std::ctime(&reTime) << "Totaling the total study time to: " << minutes << " minutes and seconds " << seconds << std::endl;
+        logging << logged << " \nStart time was: " << std::ctime(&rsTime) << "Ending time was " << std::ctime(&reTime) << "Totaling the total study time to: " << minutes << " minutes and seconds " << seconds << std::endl;
 
-        if (subjectPtr) {
-            logging << " Subject: " << subjectPtr->getSubject();
-        }
-        logging << std::endl;
         logging.flush();
         logging.close();
     } else {
