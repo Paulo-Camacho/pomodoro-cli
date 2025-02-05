@@ -9,7 +9,7 @@ int main() {
     Prompt prompt('s', 'b', 'c', 'q');
     std::string pregunta = "null";
     std::string subject;
-    std::cout << "Would you like to enter a subject? ";
+    std::cout << "Would you like to enter a subject? [Y/n]"; // Any other output that this quits the program
     std::cin >> pregunta;
     if(pregunta == "yes" || pregunta == "y")
     {
@@ -24,7 +24,6 @@ int main() {
     {
         std::cout << "Something went wrong " << std::endl;
     }
-    std::cout << subject << " is now being logged"<< std::endl;
     prompt.printMenu(subject);
     return 0;
 }

@@ -1,4 +1,3 @@
-#include <Timer.hpp>
 #include <Prompt.hpp>
 #include <cmath>
 #include <iostream>
@@ -7,10 +6,12 @@
 #include <fstream>
 #include <cstdlib>
 #include <string>
+#include <Timer.hpp>
 
 Timer::Timer(double t, const std::string& subject) : time(t * 60), log(0), counter(0), stop(false), logged(subject) {}
 
-void Timer::printTimer() {
+void Timer::printTimer() 
+    {
     // Logging the start and displaying it
     auto startTime = std::chrono::system_clock::now();
     auto rsTime = std::chrono::system_clock::to_time_t(startTime);
@@ -23,7 +24,7 @@ void Timer::printTimer() {
         std::cout << "\rIt has been " << counter << " seconds and " << counter / 60 << " minutes " << std::flush;
         if (counter == time) // i == 1500 for 25 minutes
         {
-            std::cout << "The inner loop ran. This is the number of total seconds set " << counter << std::endl;
+            // DEBUG std::cout << "The inner loop ran. This is the number of total seconds set " << counter << std::endl;
             stop = true;
         }
 
@@ -42,11 +43,10 @@ void Timer::printTimer() {
 
     std::cout << "Duration: " << minutes << " minutes and " << seconds << " seconds." << std::endl;
 
-    // I want to add that std::function return value here such that it get's logged with the rest
     std::ofstream logging;
     logging.open("./test.md", std::ios::app);
     if (logging.is_open()) {
-        logging << logged << " \nStart time was: " << std::ctime(&rsTime) << "Ending time was " << std::ctime(&reTime) << "Totaling the total study time to: " << minutes << " minutes and seconds " << seconds << std::endl;
+        logging << "\n"<< logged << "\nSTART: " << std::ctime(&rsTime) << "ENDING " << std::ctime(&reTime) << "TOTAL TIME: " << minutes << " MINUTES & SECONDS " << seconds << std::endl;
 
         logging.flush();
         logging.close();

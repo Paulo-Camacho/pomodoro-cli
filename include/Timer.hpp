@@ -1,6 +1,5 @@
 #ifndef TIMER_HPP
 #define TIMER_HPP
-#include <string>
 #include <fstream>
 
 class Timer 
