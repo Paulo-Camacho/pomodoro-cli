@@ -1,4 +1,5 @@
  
+-----------------------------------------
 Start time was: Tue Feb  4 11:34:01 2025
 Ending time was Tue Feb  4 11:34:07 2025
 Totaling the total study time to: 0 minutes and seconds 6
@@ -72,4 +73,54 @@ TOTAL TIME: 0 MINUTES & SECONDS 6
 hey
 START: Tue Feb  4 23:42:48 2025
 ENDING Tue Feb  4 23:42:54 2025
+TOTAL TIME: 0 MINUTES & SECONDS 6
+
+
+---------------------------------------------
+69
+START: Wed Feb  5 20:38:12 2025
+ENDING Wed Feb  5 20:38:18 2025
+TOTAL TIME: 0 MINUTES & SECONDS 6
+
+
+----------------------------------------------------------------------
+
+70
+START: Wed Feb  5 20:39:00 2025
+ENDING Wed Feb  5 20:39:06 2025
+TOTAL TIME: 0 MINUTES & SECONDS 6
+
+71
+START: Wed Feb  5 20:43:52 2025
+ENDING Wed Feb  5 20:43:58 2025
+TOTAL TIME: 0 MINUTES & SECONDS 6
+
+73
+START: Wed Feb  5 20:49:24 2025
+ENDING Wed Feb  5 20:49:30 2025
+TOTAL TIME: 0 MINUTES & SECONDS 6
+
+
+START: Wed Feb  5 20:52:49 2025
+ENDING Wed Feb  5 20:52:55 2025
+TOTAL TIME: 0 MINUTES & SECONDS 6
+
+73
+START: Wed Feb  5 20:53:14 2025
+ENDING Wed Feb  5 20:53:20 2025
+TOTAL TIME: 0 MINUTES & SECONDS 6
+
+74
+START: Wed Feb  5 20:53:53 2025
+ENDING Wed Feb  5 20:53:59 2025
+TOTAL TIME: 0 MINUTES & SECONDS 6
+
+Physics
+START: Wed Feb  5 20:55:59 2025
+ENDING Wed Feb  5 20:56:05 2025
+TOTAL TIME: 0 MINUTES & SECONDS 6
+
+77
+START: Wed Feb  5 21:01:23 2025
+ENDING Wed Feb  5 21:01:29 2025
 TOTAL TIME: 0 MINUTES & SECONDS 6

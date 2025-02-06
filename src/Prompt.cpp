@@ -9,6 +9,9 @@ Prompt::Prompt(char s, char b, char c, char q) : start(s), breather(b), custom(c
 // I want to return the value of this function inside of timer.cpp as that class has the log function
 void Prompt::printMenu(const std::string& subject) 
     {
+    const std::string &hold = subject;
+    char choice;
+    std::cout << "Now logging " << hold << std::endl;
     std::cout << "Menu Options:\n";
     std::cout << start << ": Start 25-minute Timer" << std::endl;
     std::cout << breather << ": Start 5-minute Timer" << std::endl;
@@ -16,7 +19,6 @@ void Prompt::printMenu(const std::string& subject)
     std::cout << quit << ": Quit" << std::endl;
     std::cout << "d: Debug" << std::endl;
 
-    char choice;
     std::cin >> choice;
 
     if (choice == start) {
@@ -39,7 +41,7 @@ void Prompt::printMenu(const std::string& subject)
         std::cout << "Exiting..." << std::endl;
     } else if (choice == 'd') {
         Timer timer(0.1, subject);
-        std::cout << "Now logging " << &subject << std::endl;
+        std::cout << "\nNow logging " << hold;
         timer.printTimer();
         printMenu(subject);
     }  

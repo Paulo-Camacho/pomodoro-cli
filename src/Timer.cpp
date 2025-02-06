@@ -44,7 +44,7 @@ void Timer::printTimer()
     std::cout << "Duration: " << minutes << " minutes and " << seconds << " seconds." << std::endl;
 
     std::ofstream logging;
-    logging.open("./test.md", std::ios::app);
+    logging.open("./log.md", std::ios::app);
     if (logging.is_open()) {
         logging << "\n"<< logged << "\nSTART: " << std::ctime(&rsTime) << "ENDING " << std::ctime(&reTime) << "TOTAL TIME: " << minutes << " MINUTES & SECONDS " << seconds << std::endl;
 
