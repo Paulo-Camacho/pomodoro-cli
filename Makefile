@@ -1,6 +1,7 @@
 GXX = g++
 CXXFLAGS = -std=c++17 -Iinclude -Wall -Wextra -Werror
-LDFLAGS = -lsfml-graphics -lsfml-window -lsfml-system -lsfml-audio
+# LDFLAGS = -lsfml-graphics -lsfml-window -lsfml-system -lsfml-audio
+LDFLAGS = -g
 BUILD_DIR = build
 SRC_DIR = src
 SOURCES = $(wildcard $(SRC_DIR)/*.cpp)

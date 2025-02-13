@@ -30,7 +30,7 @@ void Timer::printTimer()
 
     }
     // End of timer
-    system("paplay ~/Projects/Pomodoro/assets/ending.mp3 &"); // Playing during program
+//    system("paplay ~/projects/Pomodoro/assets/ending.mp3 &"); // Playing during program
 
     auto endTime = std::chrono::system_clock::now();
     auto reTime = std::chrono::system_clock::to_time_t(endTime);

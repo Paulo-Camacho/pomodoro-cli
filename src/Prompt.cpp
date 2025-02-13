@@ -5,8 +5,6 @@
 // When these variables are printed, the words inherit the chars that I defined
 Prompt::Prompt(char s, char b, char c, char q) : start(s), breather(b), custom(c), quit (q), check('\0') {}
 
-
-// I want to return the value of this function inside of timer.cpp as that class has the log function
 void Prompt::printMenu(const std::string& subject) 
     {
     const std::string &hold = subject;
