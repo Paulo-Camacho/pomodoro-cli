@@ -1,27 +1,23 @@
-GXX = g++
-CXXFLAGS = -std=c++17 -Iinclude -Wall -Wextra -Werror
-# LDFLAGS = -lsfml-graphics -lsfml-window -lsfml-system -lsfml-audio
-LDFLAGS = -g
-BUILD_DIR = build
-SRC_DIR = src
-SOURCES = $(wildcard $(SRC_DIR)/*.cpp)
-OBJECTS = $(patsubst $(SRC_DIR)/%.cpp,$(BUILD_DIR)/%.o,$(SOURCES))
-TARGET = timer
+# Compiler
+CXX=g++
 
-# Targets
-all: $(BUILD_DIR) $(TARGET)
-	./timer
+# Flags
+# CXXFLAGS=-std=c++17 -g -Wall -Wextra
+CXXFLAGS=-std=c++17 -g -pedantic -Wall -Wextra
 
-$(BUILD_DIR):
-	mkdir -p $(BUILD_DIR)
+# Source files
+SOURCES=main.cpp Timer.cpp Ask.cpp
 
-$(TARGET): $(OBJECTS)
-	$(CXX) $(CXXFLAGS) -o $@ $^ $(LDFLAGS)
+# Executable
+EXECUTABLE=exec
 
-$(BUILD_DIR)/%.o: $(SRC_DIR)/%.cpp
-	$(CXX) $(CXXFLAGS) -c $< -o $@
+# Default target
+all: $(EXECUTABLE)
+	./exec
 
+$(EXECUTABLE): $(SOURCES)
+	$(CXX) $(CXXFLAGS) $(SOURCES) -o $(EXECUTABLE)
+
+# Clean
 clean:
-	rm -r $(BUILD_DIR) $(TARGET)
-
-.PHONY: all clean
+	rm -f $(EXECUTABLE)
