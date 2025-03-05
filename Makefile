@@ -2,7 +2,6 @@
 CXX=g++
 
 # Flags
-# CXXFLAGS=-std=c++17 -g -Wall -Wextra
 CXXFLAGS=-std=c++17 -g -pedantic -Wall -Wextra
 
 # Source files
@@ -16,7 +15,7 @@ all: $(EXECUTABLE)
 	./exec
 
 $(EXECUTABLE): $(SOURCES)
-	$(CXX) $(CXXFLAGS) $(SOURCES) -o $(EXECUTABLE)
+	$(CXX) $(SOURCES) -o $(EXECUTABLE) $(CXXFLAGS)
 
 # Clean
 clean:

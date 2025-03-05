@@ -1,5 +1,5 @@
-#ifndef TIMER_H_
-#define TIMER_H_
+#ifndef TIMER_H
+#define TIMER_H
 #include <string>
 
 struct Timer
@@ -11,4 +11,4 @@ struct Timer
     double seconds;
 };
 
-#endif // TIMER_H_
+#endif // TIMER_H
