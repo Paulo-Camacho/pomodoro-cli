@@ -1,0 +1,53 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/g++",
+      "-c",
+      "-std=c++17",
+      "-g",
+      "-pedantic",
+      "-Wall",
+      "-Wextra",
+      "-o",
+      "exec",
+      "main.cpp"
+    ],
+    "directory": "/home/waifu/projects/pomodoro-cli",
+    "file": "/home/waifu/projects/pomodoro-cli/main.cpp",
+    "output": "/home/waifu/projects/pomodoro-cli/exec"
+  },
+  {
+    "arguments": [
+      "/usr/bin/g++",
+      "-c",
+      "-std=c++17",
+      "-g",
+      "-pedantic",
+      "-Wall",
+      "-Wextra",
+      "-o",
+      "exec",
+      "Timer.cpp"
+    ],
+    "directory": "/home/waifu/projects/pomodoro-cli",
+    "file": "/home/waifu/projects/pomodoro-cli/Timer.cpp",
+    "output": "/home/waifu/projects/pomodoro-cli/exec"
+  },
+  {
+    "arguments": [
+      "/usr/bin/g++",
+      "-c",
+      "-std=c++17",
+      "-g",
+      "-pedantic",
+      "-Wall",
+      "-Wextra",
+      "-o",
+      "exec",
+      "Ask.cpp"
+    ],
+    "directory": "/home/waifu/projects/pomodoro-cli",
+    "file": "/home/waifu/projects/pomodoro-cli/Ask.cpp",
+    "output": "/home/waifu/projects/pomodoro-cli/exec"
+  }
+]

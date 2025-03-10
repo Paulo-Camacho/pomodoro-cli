@@ -1,9 +1,8 @@
 # Compiler
 CXX=g++
-
 # Flags
-CXXFLAGS=-std=c++17 -g -pedantic -Wall -Wextra
-
+CXXFLAGS=-std=c++17 -g -pedantic -Wall -Wextra 
+LDFLAGS = -lsfml-system -lsfml-window -lsfml-graphics
 # Source files
 SOURCES=main.cpp Timer.cpp Ask.cpp
 
