@@ -1,12 +1,9 @@
 #ifndef ASK_H
 #define ASK_H
+
 #include <string>
+#include "Button.h"
 #include "Timer.h"
-#include <SFML/Graphics/Rect.hpp>
-#include <SFML/Graphics/RectangleShape.hpp>
-#include <SFML/System/Vector2.hpp>
-#include <SFML/Window.hpp>
-#include <SFML/Graphics.hpp>
 
 struct Ask
 {
