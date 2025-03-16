@@ -56,6 +56,7 @@
 #include <SFML/Graphics/RectangleShape.hpp>
 #include <SFML/System/Vector2.hpp>
 #include <SFML/Window.hpp>
+#include <SFML/System/Clock.hpp>
 #include <iostream>
 
 Ask::Ask() : start('\0'), debug('\0'), custom(0), subject("") {}
@@ -69,19 +70,24 @@ void Ask::prompt(Timer &hold) {
   if (!proto.loadFromFile("./assets/0xProtoNerdFont-Regular.ttf")) {
     std::cerr << "The font was not loaded" << std::endl;
   }
-  sf::Text debugB;
-  debugB.setFont(proto);
-  debugB.setString("DEBUG");
-  debugB.setCharacterSize(100);
-  debugB.setPosition(windowX/2, windowY - windowY);
 
-  sf::Text quitB;
-  quitB.setFont(proto);
-  quitB.setString(("QUIT"));
-  quitB.setCharacterSize(100);
-  quitB.setPosition(windowX/2 , quitB.getGlobalBounds().height + debugB.getGlobalBounds().height);
-
+  sf::Text play("play", proto, 150);
+  play.setPosition(windowX/2, windowY-windowY);
+  sf::Text quit("quit", proto, 150);
+  quit.setPosition(windowX/2, play.getCharacterSize());
   window.setFramerateLimit(60);
+
+
+  // Testing
+  sf::Text text("", proto, 100);
+  text.setFillColor(sf::Color::Yellow);
+  text.setPosition(windowX/2, windowY-windowY); // Center the text on the window
+
+  float countdownDuration = 10.0f;
+  float timeRemaining = countdownDuration;
+
+  sf::Clock clock;
+
 
   while (window.isOpen()) {
     sf::Event event;
@@ -90,13 +96,27 @@ void Ask::prompt(Timer &hold) {
         window.close();
     }
 
+
+    sf::Time elapsed = clock.getElapsedTime();
+        timeRemaining = countdownDuration - elapsed.asSeconds();
+
+if (timeRemaining < 0) {
+            text.setString("Time's up!");
+        } else {
+            text.setString("Time: " + std::to_string(static_cast<int>(timeRemaining)));
+        }
+
     if (sf::Mouse::isButtonPressed(sf::Mouse::Left)) {
       std::cout << "Hello, world " << std::endl;
+
+         Timer kick(0.1);
+         kick.pomodoro(subject);
+         hold.seconds += (0.1) * 60;
+
     }
 
     window.clear();
-    window.draw(debugB);
-    window.draw(quitB);
+    window.draw(text);
     window.display();
   }
 }
