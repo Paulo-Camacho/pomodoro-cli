@@ -83,8 +83,8 @@ void Ask::prompt(Timer &hold) {
   text.setFillColor(sf::Color::Yellow);
   text.setPosition(windowX/2, windowY-windowY); // Center the text on the window
 
-  float countdownDuration = 10.0f;
-  float timeRemaining = countdownDuration;
+  float countDown = 10.0f;
+  float timeRemaining = countDown;
 
   sf::Clock clock;
 
@@ -95,10 +95,6 @@ void Ask::prompt(Timer &hold) {
       if (event.type == sf::Event::Closed)
         window.close();
     }
-
-
-    sf::Time elapsed = clock.getElapsedTime();
-        timeRemaining = countdownDuration - elapsed.asSeconds();
 
 if (timeRemaining < 0) {
             text.setString("Time's up!");
@@ -113,7 +109,11 @@ if (timeRemaining < 0) {
          kick.pomodoro(subject);
          hold.seconds += (0.1) * 60;
 
+
     }
+
+    sf::Time elapsed = clock.getElapsedTime();
+        timeRemaining = countDown - elapsed.asSeconds();
 
     window.clear();
     window.draw(text);
